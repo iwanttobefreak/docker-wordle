@@ -14,5 +14,4 @@ COPY wordle.sh /
 WORKDIR /
 RUN ./vocales.sh
 
-#CMD bash
 ENTRYPOINT ["/bin/bash", "-c", "/wordle.sh \"$@\"", "--"]
